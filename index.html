@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Link -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Tailwind Css Cdn Link -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Daisy Cdn Link --> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite Cdn Link -->
+    <title>Dev-Board</title>
+ </head>
+ <body class="bg-[#F4F7FF] max-w-7xl px-4 py-0 mx-auto">
+    <header>
+        <nav>
+            <div class="flex justify-between px-2  text-2xl bg-[#FFFFFF] mt-4 rounded-lg shadow-lg poppins-regular">  
+                <div class="flex p-4 items-center space-x-2 text-center">
+                    <img src="A5-Dev-Board/assets/logo.png" alt="logo">
+                    <h1>Dev<span class="font-extrabold">Board</span></h1>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <div class="flex space-x-2 items-center justify-center w-32 h-16  bg-[#F4F7FF] rounded-full">
+                         <img class="h-8" src="A5-Dev-Board/assets/checkbox.png" alt="">
+                         <h2 id="date-update">23</h2>
+                    </div>
+                    <button id="theme" class="w-16 h-16 bg-[#F4F7FF] flex justify-center items-center rounded-full">
+                        <a href="#" class="theme-change">
+                            <img src="A5-Dev-Board/assets/theme-btn.png" alt="Theme Change Button">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+ <main class="grid grid-cols-4 mt-5 gap-4">
+  <!--Task Current Part-->
+    <section class="col-span-3 bg-[#FFFFFF] rounded-xl">
+        <div class="grid grid-cols-4 gap-4 mb-2 h-32 poppins-regular">
+
+            <div class="bg-[#F4F7FF] flex justify-center items-center space-x-2 mt-6 ml-6 rounded-lg shadow-md">
+                <div class=" w-16 h-16 rounded-full bg-[#FFFFFF] flex justify-center items-center"> 
+                    <img src="A5-Dev-Board/assets/checkbox.png" alt="">
+                </div>
+                 <div>
+                    <h2>Task Assigned</h2>
+                    <p class="font-extrabold text-4xl" id="send-message">06</p>
+                 </div>
+            </div>
+
+            <div class="change-color col-span-2 flex  items-center px-8 mt-6 space-x-2  rounded-lg shadow-md">
+                <div class="border-dashed border-black ">
+                    <img src="A5-Dev-Board/assets/board.png" alt="">
+                </div>
+                <h2 id="questions-page" class="text-xl text-[#FFFFFF]">
+                    Discover Something<br>
+                    New Today!
+                </h2>       
+            </div>
+
+            <div class="bg-[#F4F7FF] flex justify-center items-center space-x-2 mt-6 mr-6 rounded-lg shadow-md">
+                <div class=" w-16 h-16 rounded-full bg-[#FFFFFF] flex justify-center items-center"> 
+                    <img src="A5-Dev-Board/assets/calender.png" alt="">
+                </div>
+                <div>
+                    <h2 id="present-day">Wed ,</h2>
+                    <p id="present-month">Jul 28 2025</p>
+                </div>
+            </div>
+
+        </div>
+         
+        <div class="border-b-2 border-dashed border-[#3752FD33]  pb-4"></div>
+
+      <!-- Main Card Start Here -->
+      <div class="grid grid-cols-3 gap-5 pb-5 p-6">
+          <!-- Main Card One -->
+            <div class="bg-[#F4F7FF] p-3 rounded-lg task-card shadow-lg">
+                <div class="px-2 pb-5 space-y-4">
+                    <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
+                    <h5 id="card-btn-one" class="text-xl title-day  font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                        <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                            <p class="#">
+                                Debug using Chrome DevTools,<br>
+                                check for overlapping...
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3>Deadline</h3>
+                                <h2 class="font-bold">21 March 2025</h2>
+                            </div>
+                            <div>
+                                <button  class="text-white shadow-sm card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Completed
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    
+
+          <!-- Main Card Two -->
+            <div class="bg-[#F4F7FF] p-3 rounded-lg shadow-lg task-card">
+            <div class="px-2 pb-5 space-y-4">
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">CloudSync</button>
+                <h5 id="card-btn-two" class="text-xl title-day font-semibold tracking-tight text-black">Add Dark Mode</h5>
+                    <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                        <p class="#">
+                             Store the user's preference in <br>
+                             localStorage, update CSS...
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="font-bold">21 March 2025</h2>
+                        </div>
+                        <div>
+                            <button  class="text-white shadow-sm card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            </div>
+       
+    
+          <!-- Main Card Three -->
+            <div class="bg-[#F4F7FF] p-3 rounded-lg shadow-lg task-card">
+            <div class="px-2 pb-5 space-y-4">
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">SwiftPay</button>
+                <h5 id="card-btn-three" class="text-xl title-day font-semibold tracking-tight text-black">Optimize Home page</h5>
+                    <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                        <p class="#">
+                             Debug using Chrome DevTools,<br>
+                             check for overlapping...
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="font-bold">21 March 2025</h2>
+                        </div>
+                        <div>
+                            <button  class="text-white shadow-sm card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            </div>
+
+
+          <!-- Main Four Three -->
+            <div class="bg-[#F4F7FF] p-3 rounded-lg shadow-lg task-card">
+            <div class="px-2 pb-5 space-y-4">
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">Meta</button>
+                <h5 id="card-btn-four" class="text-xl title-day font-semibold tracking-tight text-black">Add new emoji 🤲</h5>
+                    <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                        <p class="#">
+                            Debug using Chrome DevTools,<br>
+                            check for overlapping...
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="font-bold">21 March 2025</h2>
+                        </div>
+                        <div>
+                            <button  class="text-white shadow-sm card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            </div>
+      
+          
+          <!-- Main Card Five -->
+            <div class="bg-[#F4F7FF] p-3 rounded-lg shadow-lg task-card">
+            <div class="px-2 pb-5 space-y-4">
+                <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">Google LLC</button>
+                <h5 id="card-btn-five" class="text-xl title-day font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                    <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                        <p class="#">
+                            Debug using Chrome DevTools,<br>
+                            check for overlapping...
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3>Deadline</h3>
+                            <h2 class="font-bold">21 March 2025</h2>
+                        </div>
+                        <div>
+                            <button  class="text-white shadow-sm card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            </div>
+
+
+          <!-- Main Card Six -->
+        <div class="bg-[#F4F7FF] p-3 rounded-lg shadow-lg task-card">
+          <div class="px-2 pb-5 space-y-4">
+            <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">Glassdoar</button>
+            <h5 id="card-btn-six" class="text-xl title-day font-semibold tracking-tight text-black">Improve Job searching</h5>
+                <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                    <p class="#">
+                        Debug using Chrome DevTools,<br>
+                        check for overlapping...
+                    </p>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3>Deadline</h3>
+                        <h2 class="font-bold">21 March 2025</h2>
+                    </div>
+                    <div>
+                        <button  class="text-white shadow-sm card-btn bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Completed
+                        </button>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </section>
+  
+  <!-- Delete Card History-->
+    <section class="w-full h-full bg-[#FFFFFF] rounded-xl">
+        <div class="flex justify-center mt-5 space-x-2">
+            <img src="A5-Dev-Board/assets/activity.png" alt="logo">
+            <h2 class="text-lg font-semibold">Activity Log </h2>
+        </div>
+        
+        <div class="flex justify-center mt-5 border-b-2 border-dashed border-[#3752FD33]  pb-4">
+            <a href="#" id="delete-history" class="text-white shadow-sm bg-blue-700 hover:bg-blue-800   focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-400">
+                Clear History
+            </a>
+        </div>
+        
+        <div class="bg-[#FFFFFF] mt-8 mx-4 newComment main-text-box rounded-lg " id="comment-list">
+            
+        </div>
+    </section>
+</main>
+
+<footer>
+    
+</footer>
+
+ <script src="scripts/scripts.js"></script>
+ </body>
+ </html>
